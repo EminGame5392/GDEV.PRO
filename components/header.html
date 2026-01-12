@@ -1,0 +1,49 @@
+<header class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-indigo-500/20">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <a href="index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                    <span class="font-bold text-white">⚡</span>
+                </div>
+                <span class="font-orbitron text-xl font-bold text-white">GDEV<span class="text-indigo-400">.PRO</span></span>
+            </a>
+        </div>
+
+        <nav class="hidden md:flex space-x-8" aria-label="Основная навигация">
+            <a href="index.html" class="nav-link text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1">Главная</a>
+            <a href="blog.html" class="nav-link text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1">Блог</a>
+            <a href="GorTEx.html" class="nav-link text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1">GorTEx</a>
+            <a href="portfolio.html" class="nav-link text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded px-2 py-1">Портфолио</a>
+        </nav>
+
+        <button class="md:hidden text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-2" id="mobile-menu-btn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+            <i data-feather="menu" style="width: 24px; height: 24px;"></i>
+        </button>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                    <span class="font-bold text-white text-sm">⚡</span>
+                </div>
+                <span class="font-orbitron font-bold text-white">GDEV<span class="text-indigo-400">.PRO</span></span>
+            </div>
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Закрыть меню">
+                <i data-feather="x" style="width: 20px; height: 20px;"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-links">
+                <a href="index.html" class="mobile-menu-link nav-link">Главная</a>
+                <a href="blog.html" class="mobile-menu-link nav-link">Блог</a>
+                <a href="GorTEx.html" class="mobile-menu-link nav-link">GorTEx</a>
+                <a href="portfolio.html" class="mobile-menu-link nav-link">Портфолио</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="main-content" tabindex="-1"></main>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - GDEV.PRO</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen">
+    <div id="header-container"></div>
+
+    <section class="hero-pattern min-h-[60vh] flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold font-orbitron mb-6">
+                Наше <span class="neon-text">Портфолио</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Проекты, которые мы создали с любовью к технологиям и вниманием к деталям
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="portfolio-filter-btn active" data-filter="all">
+                    Все проекты
+                </button>
+                <button class="portfolio-filter-btn" data-filter="web">
+                    Веб-разработка
+                </button>
+                <button class="portfolio-filter-btn" data-filter="minecraft">
+                    Minecraft плагины
+                </button>
+                <button class="portfolio-filter-btn" data-filter="telegram">
+                    Telegram боты
+                </button>
+                <button class="portfolio-filter-btn" data-filter="ai">
+                    AI решения
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="minecraft">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500/20 to-purple-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🎮</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SkyBlock RPG Plugin</h3>
+                        <p class="text-gray-400 text-sm mb-4">Кастомный плагин для Minecraft сервера с RPG элементами, квестовой системой и экономикой</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Java</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Spigot API</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">MySQL</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs">Redis</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-400 font-bold">Завершен</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="web">
+                    <div class="h-48 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🛒</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">EcoMarket Platform</h3>
+                        <p class="text-gray-400 text-sm mb-4">Полнофункциональный интернет-магазин экопродуктов с системой доставки и оплаты</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">MongoDB</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-xs">Stripe API</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-400 font-bold">В разработке</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="telegram ai">
+                    <div class="h-48 bg-gradient-to-r from-green-500/20 to-teal-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🤖</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI Assistant Bot</h3>
+                        <p class="text-gray-400 text-sm mb-4">Многофункциональный Telegram бот с интеграцией GPT-4, оплатой и админ-панелью</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Python</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Aiogram</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs">OpenAI</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">PostgreSQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-400 font-bold">Завершен</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="web">
+                    <div class="h-48 bg-gradient-to-r from-purple-500/20 to-pink-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🏢</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Corporate Portal</h3>
+                        <p class="text-gray-400 text-sm mb-4">Корпоративный портал для управления задачами, документами и коммуникацией</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Vue.js</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Laravel</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-500/20 text-gray-300 rounded-full text-xs">Docker</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-400 font-bold">Завершен</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="minecraft">
+                    <div class="h-48 bg-gradient-to-r from-yellow-500/20 to-orange-600/20 flex items-center justify-center">
+                        <div class="text-5xl">⚔️</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PvP Arena Plugin</h3>
+                        <p class="text-gray-400 text-sm mb-4">Плагин для PvP арен с системой рейтингов, турниров и статистики</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Kotlin</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Paper API</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-xs">Redis</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">WebSockets</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-400 font-bold">В разработке</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="telegram">
+                    <div class="h-48 bg-gradient-to-r from-blue-500/20 to-cyan-600/20 flex items-center justify-center">
+                        <div class="text-5xl">💰</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Crypto Trader Bot</h3>
+                        <p class="text-gray-400 text-sm mb-4">Telegram бот для торговли криптовалютами с аналитикой и автоматическими стратегиями</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Python</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs">Binance API</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-gray-500/20 text-gray-300 rounded-full text-xs">Redis</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-400 font-bold">Завершен</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="ai">
+                    <div class="h-48 bg-gradient-to-r from-pink-500/20 to-rose-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🎨</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI Image Generator</h3>
+                        <p class="text-gray-400 text-sm mb-4">Веб-приложение для генерации изображений с помощью Stable Diffusion API</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Next.js</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">FastAPI</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs">Stable Diffusion</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-xs">Stripe</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-400 font-bold">В разработке</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="web">
+                    <div class="h-48 bg-gradient-to-r from-teal-500/20 to-emerald-600/20 flex items-center justify-center">
+                        <div class="text-5xl">📊</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
+                        <p class="text-gray-400 text-sm mb-4">Панель аналитики в реальном времени для отслеживания бизнес-метрик</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">D3.js</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">GraphQL</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">WebSockets</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-indigo-400 font-bold">Завершен</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item glass-card rounded-2xl overflow-hidden" data-category="minecraft">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500/20 to-blue-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🏰</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kingdom Management Plugin</h3>
+                        <p class="text-gray-400 text-sm mb-4">Комплексный плагин для управления королевствами с экономикой и политикой</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Java</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Hibernate</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">MySQL</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs">Web API</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-400 font-bold">В разработке</span>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

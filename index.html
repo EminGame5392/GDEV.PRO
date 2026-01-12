@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDEV.PRO | Главная</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen">
+    <div id="header-container"></div>
+
+    <section class="hero-pattern min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold font-orbitron mb-4">
+                    Создаем цифровые <span class="neon-text">решения</span> будущего
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 max-w-lg">
+                    Студия разработки веб-приложений, Minecraft плагинов и Telegram ботов с искусственным интеллектом
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="scroll-link px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                        Заказать проект
+                    </a>
+                    <a href="#works" class="scroll-link px-8 py-3 glass-card rounded-lg font-medium">
+                        Наши работы
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 opacity-20 absolute -top-6 -left-6 animate-pulse"></div>
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 opacity-20 absolute -bottom-6 -right-6 animate-pulse delay-1000"></div>
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-indigo-500/30">
+                        <div class="w-full h-full bg-gray-800 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-5xl mb-2">⚡</div>
+                                <div class="font-orbitron text-xl">GDEV.PRO</div>
+                                <div class="text-sm text-gray-400 mt-2">Студия разработки</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-orbitron mb-4">О нашей <span class="neon-text">студии</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Мы создаем технологии, которые вдохновляют</h3>
+                    <p class="text-gray-300 mb-6">
+                        GDEV.PRO - это команда профессиональных разработчиков, специализирующихся на создании
+                        современных веб-решений, Minecraft плагинов и Telegram ботов с использованием передовых технологий.
+                    </p>
+                    <p class="text-gray-300 mb-8">
+                        Наша миссия - превращать идеи в реальность, создавая продукты, которые не только функциональны,
+                        но и эстетически привлекательны, обеспечивая максимальный пользовательский опыт.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="text-green-400 mr-2"></i>
+                            <span>Индивидуальный подход</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="text-green-400 mr-2"></i>
+                            <span>Современные технологии</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="text-green-400 mr-2"></i>
+                            <span>Поддержка 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="text-3xl mb-4">🌐</div>
+                        <h4 class="font-bold mb-2">Веб-разработка</h4>
+                        <p class="text-sm text-gray-400">Сайты и веб-приложения любой сложности</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="text-3xl mb-4">⛏️</div>
+                        <h4 class="font-bold mb-2">Minecraft</h4>
+                        <p class="text-sm text-gray-400">Плагины для версий 1.16-1.21</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="text-3xl mb-4">🤖</div>
+                        <h4 class="font-bold mb-2">Telegram боты</h4>
+                        <p class="text-sm text-gray-400">AI-powered решения</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="text-3xl mb-4">⚡</div>
+                        <h4 class="font-bold mb-2">Высокая скорость</h4>
+                        <p class="text-sm text-gray-400">Быстрая реализация проектов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-orbitron mb-4">Наши <span class="neon-text">услуги</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-2xl p-8">
+                    <div class="w-16 h-16 rounded-lg bg-indigo-500/20 flex items-center justify-center mb-6">
+                        <i data-feather="globe" class="text-indigo-400" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Веб-разработка</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Лендинги и корпоративные сайты</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Интернет-магазины</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Веб-приложения</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Backend/API разработка</span>
+                        </li>
+                    </ul>
+                    <div class="mt-auto pt-4">
+                        <div class="text-2xl font-bold text-indigo-400">от 3.000 ₽</div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8">
+                    <div class="w-16 h-16 rounded-lg bg-purple-500/20 flex items-center justify-center mb-6">
+                        <i data-feather="box" class="text-purple-400" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Minecraft плагины</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Плагины для серверов 1.16-1.21</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Кастомные механики</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Интеграция с базами данных</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Оптимизация производительности</span>
+                        </li>
+                    </ul>
+                    <div class="mt-auto pt-4">
+                        <div class="text-2xl font-bold text-purple-400">от 300 ₽</div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8">
+                    <div class="w-16 h-16 rounded-lg bg-cyan-500/20 flex items-center justify-center mb-6">
+                        <i data-feather="message-square" class="text-cyan-400" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Telegram боты</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Боты с асинхронной работой</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Интеграция с AI моделями</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Платежные системы</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-400 mr-2 mt-1" style="width: 16px; height: 16px;"></i>
+                            <span>Админ-панели</span>
+                        </li>
+                    </ul>
+                    <div class="mt-auto pt-4">
+                        <div class="text-2xl font-bold text-cyan-400">от 1.000 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-orbitron mb-4">Наши <span class="neon-text">работы</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Проекты, созданные нашей командой с использованием передовых технологий</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500/20 to-purple-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🎮</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SkyBlock RPG Plugin</h3>
+                        <p class="text-gray-400 text-sm mb-4">Кастомный плагин для Minecraft сервера с RPG элементами</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Java</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Spigot API</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🛒</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">EcoMarket</h3>
+                        <p class="text-gray-400 text-sm mb-4">Интернет-магазин экопродуктов с доставкой</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-green-500/20 to-teal-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🤖</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI Assistant Bot</h3>
+                        <p class="text-gray-400 text-sm mb-4">Telegram бот с интеграцией GPT и оплатой</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs">Python</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">Aiogram</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs">OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="portfolio.html" class="px-8 py-3 glass-card rounded-lg font-medium hover:bg-indigo-500/20 transition-colors inline-block">
+                    Смотреть все работы
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-orbitron mb-4">Свяжитесь с <span class="neon-text">нами</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Готовы воплотить ваш проект в жизнь? Напишите нам!</p>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="glass-card rounded-2xl p-8 w-full max-w-md lg:max-w-lg">
+                    <h3 class="text-2xl font-bold mb-8 text-center">Контактная информация</h3>
+
+                    <div class="space-y-8">
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center mr-5">
+                                <i data-feather="mail" class="text-indigo-400" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Email</h4>
+                                <p class="text-gray-400 text-lg">contact@gdev.pro</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center mr-5">
+                                <i data-feather="phone" class="text-purple-400" style="width: 24px; height: 24px;"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Телефон</h4>
+                                <p class="text-gray-400 text-lg">+7 (910) 405-37-22</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-4">
+                            <a href="https://t.me/GorTExDEV_pro?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20IT%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5" target="_blank"
+                               class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-lg font-medium text-white hover:opacity-90 transition-opacity pulse w-full">
+                                <i data-feather="send" class="mr-2" style="width: 18px; height: 18px;"></i>
+                                Написать в Telegram
+                            </a>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-700/50">
+                            <h4 class="font-bold text-lg mb-6 text-center">Мы в социальных сетях</h4>
+                            <div class="flex justify-center space-x-5">
+                                <a href="http://gdev.pro/github" class="w-14 h-14 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-500 transition-colors hover:scale-110">
+                                    <i data-feather="github" style="width: 22px; height: 22px;"></i>
+                                </a>
+                                <a href="http://gdev.pro//tgk" class="w-14 h-14 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-500 transition-colors hover:scale-110">
+                                    <i data-feather="send" style="width: 22px; height: 22px;"></i>
+                                </a>
+                                <a href="http://gdev.pro/tiktok" class="w-14 h-14 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-500 transition-colors hover:scale-110">
+                                    <i data-feather="video" style="width: 22px; height: 22px;"></i>
+                                </a>
+                                <a href="http://gdev.pro/yt" class="w-14 h-14 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-500 transition-colors hover:scale-110">
+                                    <i data-feather="youtube" style="width: 22px; height: 22px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

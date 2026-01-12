@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - GDEV.PRO</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen">
+    <div id="header-container"></div>
+
+    <section class="hero-pattern min-h-[60vh] flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold font-orbitron mb-6">
+                Наш <span class="neon-text">Блог</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Полезные статьи, руководства и новости из мира разработки
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500/20 to-purple-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🚀</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-3">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full">Веб-разработка</span>
+                            <span class="ml-3">15.01.2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Тренды веб-разработки в 2026 году</h3>
+                        <p class="text-gray-400 mb-4">Какие технологии будут актуальны в ближайшем будущем и как подготовиться к изменениям.</p>
+                        <button class="article-btn text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center" data-article="trends-2026.md">
+                            Читать статью
+                            <i data-feather="arrow-right" class="ml-2" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🤖</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-3">
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full">Telegram боты</span>
+                            <span class="ml-3">10.01.2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Создание AI-бота с нуля</h3>
+                        <p class="text-gray-400 mb-4">Пошаговое руководство по созданию Telegram бота с искусственным интеллектом.</p>
+                        <button class="article-btn text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center" data-article="ai-bot-guide.md">
+                            Читать статью
+                            <i data-feather="arrow-right" class="ml-2" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-green-500/20 to-teal-600/20 flex items-center justify-center">
+                        <div class="text-5xl">⛏️</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-3">
+                            <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full">Minecraft</span>
+                            <span class="ml-3">05.01.2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Оптимизация Minecraft серверов</h3>
+                        <p class="text-gray-400 mb-4">Лучшие практики для повышения производительности игровых серверов.</p>
+                        <button class="article-btn text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center" data-article="minecraft-optimization.md">
+                            Читать статью
+                            <i data-feather="arrow-right" class="ml-2" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-yellow-500/20 to-orange-600/20 flex items-center justify-center">
+                        <div class="text-5xl">⚡</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-3">
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full">Производительность</span>
+                            <span class="ml-3">28.12.2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Ускорение загрузки сайтов</h3>
+                        <p class="text-gray-400 mb-4">Техники и инструменты для оптимизации скорости веб-приложений.</p>
+                        <button class="article-btn text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center" data-article="performance-optimization.md">
+                            Читать статью
+                            <i data-feather="arrow-right" class="ml-2" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-pink-500/20 to-rose-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🔒</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-3">
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full">Безопасность</span>
+                            <span class="ml-3">20.12.2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Безопасность веб-приложений</h3>
+                        <p class="text-gray-400 mb-4">Основные угрозы и методы защиты от атак.</p>
+                        <button class="article-btn text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center" data-article="web-security.md">
+                            Читать статью
+                            <i data-feather="arrow-right" class="ml-2" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-purple-500/20 to-indigo-600/20 flex items-center justify-center">
+                        <div class="text-5xl">🎯</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-3">
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full">Стартапы</span>
+                            <span class="ml-3">15.12.2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Как запустить IT-проект</h3>
+                        <p class="text-gray-400 mb-4">От идеи до реализации: полное руководство для начинающих.</p>
+                        <button class="article-btn text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center" data-article="it-startup-guide.md">
+                            Читать статью
+                            <i data-feather="arrow-right" class="ml-2" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="article-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-2xl font-bold font-orbitron" id="modal-title"></h2>
+                <button class="modal-close" id="modal-close">
+                    <i data-feather="x" style="width: 24px; height: 24px;"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="article-content" class="article-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
